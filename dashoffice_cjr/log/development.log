@@ -1,0 +1,133 @@
+  [1m[35m (952.3ms)[0m  [1m[35mCREATE DATABASE "dashoffice_cjr_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (328.2ms)[0m  [1m[35mCREATE DATABASE "dashoffice_cjr_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-03-22 10:34:13 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6091ms (Views: 6085.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-22 10:56:26 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (3986.9ms)
+Completed 500 Internal Server Error in 3996ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( img/logo.png )` to `config/initializers/assets.rb` and restart your server):
+     5: 				<nav class="navbar navbar-expand-lg navbar-light">
+     6: 					<div class="container">
+     7: 						  <a class="navbar-brand" href="index.html">
+     8: 						  	<%= image_tag "img/logo.png", class: "" %>
+     9: 						  </a>
+    10: 						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    11: 						    <span class="navbar-toggler-icon"></span>
+  
+app/views/main/index.html.erb:8:in `_app_views_main_index_html_erb___388649534120570719_47453418298200'
+Started GET "/" for ::1 at 2019-03-22 10:57:25 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (54.3ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( img/logo.png )` to `config/initializers/assets.rb` and restart your server):
+     5: 				<nav class="navbar navbar-expand-lg navbar-light">
+     6: 					<div class="container">
+     7: 						  <a class="navbar-brand" href="index.html">
+     8: 						  	<%= image_tag "img/logo.png", class: "" %>
+     9: 						  </a>
+    10: 						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    11: 						    <span class="navbar-toggler-icon"></span>
+  
+app/views/main/index.html.erb:8:in `_app_views_main_index_html_erb___388649534120570719_70319879656800'
+Started GET "/" for ::1 at 2019-03-22 10:58:20 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (4041.8ms)
+Completed 200 OK in 4389ms (Views: 4383.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/header-bg.jpg" for ::1 at 2019-03-22 10:58:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/header-bg.jpg"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-22 11:02:34 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (820.5ms)
+Completed 500 Internal Server Error in 830ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `img' for #<#<Class:0x0000559030ed0628>:0x00007f9a4094d9a0>):
+    40: 			<!-- End Header Area -->
+    41: 
+    42: 			<!-- start banner Area -->
+    43: 			<section class="banner-area relative" id="home" data-parallax="scroll" data-image-src="<%= asset_path(img/header-bg.jpg)%>">
+    44: 				<div class="overlay-bg overlay"></div>
+    45: 				<div class="container">
+    46: 					<div class="row fullscreen">
+  
+app/views/main/index.html.erb:43:in `_app_views_main_index_html_erb___2656434630865733313_47038892248260'
+Started GET "/" for ::1 at 2019-03-22 11:03:34 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (545.7ms)
+Completed 200 OK in 735ms (Views: 728.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-22 11:07:36 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (578.8ms)
+Completed 200 OK in 777ms (Views: 770.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-22 11:12:12 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (561.8ms)
+Completed 200 OK in 742ms (Views: 735.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-22 11:14:20 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (645.1ms)
+Completed 200 OK in 883ms (Views: 873.5ms | ActiveRecord: 0.0ms)
+
+
